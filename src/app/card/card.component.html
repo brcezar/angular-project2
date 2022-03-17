@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem;">
+  <img *ngIf="imagemURL" src="{{ imagemURL }}" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">{{ titulo }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ subTitulo }}</h6>
+    <p class="card-text">
+      {{ descricao }}
+    </p>
+    <button (click)="onClick.emit()" class="btn btn-primary">Botão</button>
+  </div>
+</div>

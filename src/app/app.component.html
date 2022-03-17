@@ -1,0 +1,41 @@
+<div class="container mt-5">
+  <app-card
+    [titulo]="cardTitle"
+    [descricao]="cardDescription"
+    [subTitulo]="'teste'"
+    [imagemURL]="cardImage"
+    s
+    (onClick)="onClick()"
+  ></app-card>
+</div>
+
+<div class="container mt-3">
+  <div class="row mt-3">
+    <app-button
+      [size]="'small'"
+      [outline]="true"
+      [text]="'Azul'"
+      [buttonColor]="'primary'"
+      [badge]="'123'"
+    ></app-button>
+  </div>
+  <div class="row mt-3">
+    <app-button
+      [outline]="false"
+      [text]="'Vermelho'"
+      [buttonColor]="'danger'"
+      [badge]="'12'"
+      [badgeColor]="'warning'"
+      [badgeCorner]="true"
+    ></app-button>
+  </div>
+  <div class="row mt-3">
+    <app-button
+      [size]="'big'"
+      [outline]="true"
+      [text]="'Amarelo'"
+      [buttonColor]="'warning'"
+    ></app-button>
+  </div>
+</div>
+
